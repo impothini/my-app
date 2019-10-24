@@ -1,7 +1,7 @@
 pipeline {
     agent any 
     stages {
-        stage('Fetch and Clean') { 
+        stage('Clean') { 
             steps {
                 //clone git repo
                 sh 'mvn clean'
